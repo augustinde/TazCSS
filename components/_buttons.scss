@@ -1,0 +1,349 @@
+.btn{
+	outline:none;
+	border:none;
+	padding:10px 12px;
+	font-size:14px;
+	cursor:pointer;
+	transition:background 0.4s ease-in-out;
+	position:relative;
+	overflow:hidden;
+	background-position:center;
+	text-decoration:none;
+	font-family:sans-serif;
+	background-color: #EFEFEF;
+	color:#000;
+	margin:4px;
+
+	&_rounded{
+		border-radius: 3px;
+	}
+
+	&_left{
+		margin-right: auto;
+		display: block;
+	}
+
+	&_center{
+		margin: auto;
+		display: block;
+	}
+
+	&_right{
+		margin-left: auto;
+		display: block;
+	}
+
+	&_block{
+		width: 100%;
+	}
+
+	&_small{
+		padding:8px;
+		font-size:12px;
+	}
+
+	&_large{
+		padding:14px 16px;
+		font-size:18px;
+	}
+
+	&_icon {
+		display: flex;
+		align-items: center;
+
+		&::before {
+			vertical-align: middle;
+			font-family: "Font Awesome 5 Free";
+			font-style: normal;
+			font-variant-caps: normal;
+			font-variant-ligatures: normal;
+			font-weight: 900;
+			font-size: 1.3em;
+			height: 16px;
+			line-height: 17px;
+			margin-right: 12px;
+			text-rendering: auto;
+			width: 16px;
+			-webkit-font-smoothing: antialiased;
+		}
+	}
+
+	&_primary{
+		background-color: $color-primary;
+		color:#fff;
+
+		&:hover{
+			background: $color-primary-hover radial-gradient(circle, transparent 1%, $color-primary-hover 1%) center/15000%;
+			color:#fff;
+		}
+
+		&:active{
+			background-color: $color-primary-active;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+	}
+
+	&_secondary{
+		background-color: $color-secondary;
+		color:#fff;
+
+		&:hover{
+			background: $color-secondary-hover radial-gradient(circle, transparent 1%, $color-secondary-hover 1%) center/15000%;
+			color:#fff;
+		}
+
+		&:active{
+			background-color:$color-secondary-active;
+			background-size:100%;
+			transition:background 0s;
+		}
+	}
+
+	&_error{
+		background-color:$color-error;
+		color:#fff;
+
+		&:hover{
+			background: $color-error-hover radial-gradient(circle, transparent 1%, $color-error-hover 1%) center/15000%;
+			color:#fff;
+		}
+
+		&:active{
+			background-color:$color-error-active;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f00d";
+		}
+	}
+
+	&_success{
+		background-color: $color-success;
+		color:#fff;
+
+		&:hover{
+			background: $color-success-hover radial-gradient(circle, transparent 1%, $color-success-hover 1%) center/15000%;
+			color:#fff;
+		}
+
+		&:active{
+			background-color:$color-success-active;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f058";
+		}
+	}
+
+	&_warn{
+		background-color:$color-warn;
+		color:#fff;
+
+		&:hover{
+			background: $color-warn-hover radial-gradient(circle, transparent 1%, $color-warn-hover 1%) center/15000%;
+			color:#fff;
+		}
+
+		&:active{
+			background-color:$color-warn-active;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f00d";
+		}
+	}
+
+	&_dark{
+		background-color:$color-dark;
+		color:#fff;
+
+		&:hover{
+			background: $color-dark-hover radial-gradient(circle, transparent 1%, $color-dark-hover 1%) center/15000%;
+			color:#fff;
+		}
+
+		&:active{
+			background-color:$color-dark-active;
+			background-size:100%;
+			transition:background 0s;
+		}
+	}
+
+	&_light{
+		background-color:$color-light;
+		color: $color-dark;
+
+		&:hover{
+			background: $color-light-hover radial-gradient(circle, transparent 1%, $color-light-hover 1%) center/15000%;
+			color: $color-dark;
+		}
+
+		&:active{
+			background-color:$color-light-active;
+			background-size:100%;
+			transition:background 0s;
+		}
+	}
+
+	&_outline{
+		background-color:#fff;
+
+		&_primary {
+			color: $color-primary;
+			border: 1px solid $color-primary;
+
+			&:hover {
+				background: $color-primary-hover radial-gradient(circle, transparent 1%, $color-primary-hover 1%) center/15000%;
+				color: #fff;
+			}
+
+			&:active {
+				background-color: $color-primary-active;
+				background-size: 100%;
+				transition: background 0s;
+			}
+
+			&.btn_icon::before {
+				content: "\f05a";
+			}
+		}
+
+		&_secondary{
+			color: $color-secondary;
+			border:1px solid $color-secondary;
+
+			&:hover{
+				background: $color-secondary-hover radial-gradient(circle, transparent 1%, $color-secondary-hover 1%) center/15000%;
+				color:#fff;
+			}
+
+			&:active{
+				background-color:$color-secondary-active;
+				background-size:100%;
+				transition:background 0s;
+			}
+		}
+
+		&_error{
+			color:$color-error;
+			border:1px solid $color-error;
+
+			&:hover{
+				background: $color-error-hover radial-gradient(circle, transparent 1%, $color-error-hover 1%) center/15000%;
+				color:#fff;
+			}
+
+			&:active{
+				background-color:$color-error-active;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f00d";
+			}
+		}
+
+		&_success{
+			color:$color-success;
+			border:1px solid $color-success;
+
+			&:hover{
+				background: $color-success-hover radial-gradient(circle, transparent 1%, $color-success-hover 1%) center/15000%;
+				color:#fff;
+			}
+
+			&:active{
+				background-color:$color-success-active;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f058";
+			}
+		}
+
+		&_warn{
+			color:$color-warn;
+			border:1px solid $color-warn;
+
+
+			&:hover{
+				background: $color-warn-hover radial-gradient(circle, transparent 1%, $color-warn-hover 1%) center/15000%;
+				color:#fff;
+			}
+
+			&:active{
+				background-color:$color-warn-active;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f00d";
+			}
+		}
+
+		&_dark{
+			color:$color-dark;
+			border:1px solid $color-dark;
+
+			&:hover{
+				background: $color-dark-hover radial-gradient(circle, transparent 1%, $color-dark-hover 1%) center/15000%;
+				color:#fff;
+			}
+
+			&:active{
+				background-color:$color-dark-active;
+				background-size:100%;
+				transition:background 0s;
+			}
+		}
+
+		&_light{
+			color: $color-dark;
+			border:1px solid $color-light;
+
+			&:hover{
+				background: $color-light-hover radial-gradient(circle, transparent 1%, $color-light-hover 1%) center/15000%;
+				color: $color-dark;
+			}
+
+			&:active{
+				background-color:$color-light-active;
+				background-size:100%;
+				transition:background 0s;
+			}
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

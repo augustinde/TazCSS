@@ -1,0 +1,142 @@
+.alert{
+
+	margin-bottom:10px;
+	font-family:sans-serif;
+	box-sizing:border-box;
+	padding: 20px 15px;
+	font-size:16px;
+	border:1px solid $color-grey-9;
+	background-color: $color-light-1;
+	color:$color-grey-9;
+	width:100%;
+
+	&_rounded{
+		border-radius:5px;
+	}
+
+	&_border_large{
+		border-width:2px;
+	}
+
+	&_content_width{
+		width:fit-content;
+	}
+
+	& > a.alert_link{
+		font-weight:bold;
+		color:currentcolor;
+	}
+
+	&_icon{
+		display:flex;
+		align-items:center;
+
+		&::before{
+			vertical-align:middle;
+			font-family: "Font Awesome 5 Free";
+			font-style: normal;
+			font-variant-caps: normal;
+			font-variant-ligatures: normal;
+			font-weight: 900;
+			font-size:26px;
+			height: 16px;
+			line-height: 16px;
+			margin-right: 20px;
+			text-rendering: auto;
+			width: 16px;
+			-webkit-font-smoothing: antialiased;
+		}
+	}
+
+	&_dismissible{
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+	}
+
+	& > button.alert_btn_close{
+		cursor:pointer;
+		outline:none;
+		border:none;
+		background-color:transparent;
+		color:currentcolor;
+		font-weight:bold;
+
+		&::before{
+			content:"\f00d";
+			vertical-align:middle;
+			font-family: "Font Awesome 5 Free";
+			font-style: normal;
+			font-variant-caps: normal;
+			font-variant-ligatures: normal;
+			font-weight: 900;
+			font-size:28px;
+			height: 16px;
+			line-height: 16px;
+			text-rendering: auto;
+			width: 16px;
+			-webkit-font-smoothing: antialiased;
+		}
+	}
+
+
+	&_primary{
+		border-color: $color-blue-9;
+		background-color: $color-blue-1;
+		color: $color-blue-9;
+
+		&.alert_icon::before{
+			content:"\f05a";
+		}
+	}
+
+
+	&_secondary{
+		border-color: $color-grey-9;
+		background-color: $color-grey-1;
+		color: $color-grey-9;
+	}
+
+	&_error{
+		border-color: $color-red-9;
+		background-color: $color-red-1;
+		color: $color-red-9;
+
+		&.alert_icon::before{
+			content:"\f188";
+		}
+	}
+
+	&_success{
+		border-color: $color-green-9;
+		background-color: $color-green-1;
+		color: $color-green-9;
+
+		&.alert_icon::before{
+			content:"\f058";
+		}
+	}
+
+	&_warn{
+		border-color: $color-orange-9;
+		background-color: $color-orange-1;
+		color: $color-orange-9;
+
+		&.alert_icon::before{
+			content:"\f071";
+		}
+	}
+
+	&_dark{
+		border-color: $color-dark-1;
+		background-color: $color-dark-5;
+		color: $color-light-1;
+	}
+
+	&_light{
+		border-color: $color-light-9;
+		background-color: $color-light-1;
+		color: $color-dark-4;
+	}
+
+}

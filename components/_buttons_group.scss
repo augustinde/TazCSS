@@ -1,0 +1,102 @@
+.btn_group{
+	display:flex;
+	position:relative;
+	vertical-align:middle;
+	margin:4px 2px;
+	flex-flow:row wrap;
+
+	&_small > .btn{
+		padding:8px;
+		font-size:12px;
+	}
+
+	&_large > .btn{
+		padding:14px 16px;
+		font-size:18px;
+	}
+
+
+	&_rounded > .btn{
+		border-radius:3px;
+	}
+
+	& > .btn:not(:last-child){
+		border-top-right-radius:0px;
+		border-bottom-right-radius:0px;
+	}
+
+	& > .btn:not(:first-child){
+		border-top-left-radius:0px;
+		border-bottom-left-radius:0px;
+	}
+
+	& > .btn{
+
+		margin:0px;
+
+		&_outline{
+			&_primary:not(:first-child),
+			&_secondary:not(:first-child),
+			&_warn:not(:first-child),
+			&_error:not(:first-child),
+			&_success:not(:first-child),
+			&_dark:not(:first-child),
+			&_light:not(:first-child){
+				margin-left:-1px;
+			}
+		}
+
+	}
+
+	&_left{
+		justify-content:flex-start;
+	}
+
+	&_center{
+		justify-content:center;
+	}
+
+	&_right{
+		justify-content:flex-end;
+	}
+
+	&_column{
+
+		flex-direction:column;
+
+		&.btn_group_rounded > .btn{
+			border-radius:3px;
+		}
+
+		&>.btn:not(:last-child){
+			border-bottom-right-radius:0px;
+			border-bottom-left-radius:0px;
+		}
+
+		&>.btn:not(:first-child){
+			border-top-left-radius:0px;
+			border-top-right-radius:0px;
+		}
+
+		&>.btn{
+			width:fit-content;
+
+			&_primary:not(:first-child),
+			&_secondary:not(:first-child),
+			&_warn:not(:first-child),
+			&_error:not(:first-child),
+			&_success:not(:first-child),
+			&_dark:not(:first-child),
+			&_light:not(:first-child){
+				margin-left:0;
+				margin-top:-1px;
+			}
+
+		}
+
+
+		&.btn_group_block > .btn{
+			width:auto;
+		}
+	}
+}
