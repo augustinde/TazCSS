@@ -1,37 +1,37 @@
-#TazCSS
+# TazCSS
 
 __TazCSS__ est un framework CSS qui inclut les composants basiques nécessaire à la création d'un site web de manière rapide.
 
 ---
 
-##Bien démarrer
+## Bien démarrer
 
 Aucun prérequis n'est nécessaire.
 
-####Télécharger le projet
+#### Télécharger le projet
 
 Bientôt
 
 ---
 
-####OU Utiliser le CDN
+#### OU Utiliser le CDN
 
 Bientôt
 
 ---
 
-##Documentation
+## Documentation
 
 Voir la [documentation]().
 
 ---
 
-##Versions
+## Versions
 
-#####TazCSS 0.1
+##### TazCSS 0.1
 
 ---
 
-##Licence
+## Licence
 
 TazCSS est sous licence `GNU GPL` voir le fichier LICENCE.txt pour plus d'informations.
