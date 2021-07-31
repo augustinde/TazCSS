@@ -29,4 +29,4 @@ Voir la [documentation]().
 
 ## Licence
 
-TazCSS est sous licence `GNU GPL` voir le fichier LICENCE.txt pour plus d'informations.
+TazCSS est sous licence `GNU GPL` voir le fichier [LICENCE.txt](https://github.com/augustinde/TazCSS/blob/master/LICENSE.txt) pour plus d'informations.
