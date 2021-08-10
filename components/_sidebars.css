@@ -1,0 +1,187 @@
+.default_link_sidebar, .sidebar_content > .sidebar_link_title, .sidebar_content > .sidebar_link_section, .sidebar_content > .sidebar_link {
+  text-decoration: none;
+  color: #F3F3F3;
+  padding: 20px;
+  word-break: break-word;
+}
+
+.sidebar {
+  background-color: #494949;
+  display: flex;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: inherit;
+  font-size: 1.1rem;
+}
+.sidebar_content {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  left: 50px;
+  min-width: 0px;
+  width: 0px;
+  transition: all 0.45s ease-in-out;
+}
+.sidebar_content.active {
+  width: 300px;
+}
+.sidebar_content > .sidebar_link {
+  transition: all 0.5s ease;
+  position: relative;
+}
+.sidebar_content > .sidebar_link::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  background-color: #292929;
+  top: 0;
+  left: 0;
+  transition: background-color 0.25s ease-in-out;
+}
+.sidebar_content > .sidebar_link:hover::before {
+  background-color: #0A6CFF;
+}
+.sidebar_content > .sidebar_link.active {
+  background-color: rgba(10, 108, 255, 0.2);
+}
+.sidebar_content > .sidebar_link.active::before {
+  background-color: #0A6CFF;
+}
+.sidebar_content > .sidebar_link_section {
+  text-align: center;
+  background-color: #3D3D3D;
+  font-weight: bold;
+}
+.sidebar_content > .sidebar_link_title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.sidebar_content > .sidebar_link_title_logo {
+  height: 150px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.sidebar_content > .sidebar_link_title_logo > img {
+  width: inherit;
+  height: 80%;
+}
+.sidebar_large {
+  font-size: 1.4rem;
+}
+.sidebar_large .sidebar_link_title {
+  font-size: 1.7rem;
+}
+.sidebar_small {
+  font-size: 1.1rem;
+}
+.sidebar_icon {
+  height: 100%;
+  width: 50px;
+  background-color: #3D3D3D;
+  top: 0;
+  cursor: pointer;
+}
+.sidebar_icon_bar {
+  margin: auto 7px;
+  height: 5px;
+  background-color: #EBEBEB;
+  top: 25px;
+  position: absolute;
+  width: 35px;
+  transition: background-color 0.25s ease-in-out 0.35s;
+}
+.sidebar_icon_bar_rounded, .sidebar_icon_bar_rounded::after, .sidebar_icon_bar_rounded::before {
+  border-radius: 5px;
+}
+.sidebar_icon_bar::before, .sidebar_icon_bar::after {
+  width: 100%;
+  content: "";
+  height: 5px;
+  background-color: #EBEBEB;
+  position: absolute;
+}
+.sidebar_icon_bar::after {
+  top: 12px;
+  transition: transform 0.25s ease-in-out, top 0.25s ease-in-out 0.35s;
+}
+.sidebar_icon_bar::before {
+  bottom: 12px;
+  transition: transform 0.25s ease-in-out, bottom 0.25s ease-in-out 0.35s;
+}
+.sidebar_icon_active {
+  background-color: rgba(255, 255, 255, 0);
+}
+.sidebar_icon_active::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  top: 0px;
+  transition: transform 0.25s ease-in-out 0.35s, top 0.25s ease-in-out;
+}
+.sidebar_icon_active::before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: 0px;
+  transition: transform 0.25s ease-in-out 0.35s, bottom 0.25s ease-in-out;
+}
+.sidebar_light {
+  background-color: #F3F3F3;
+}
+.sidebar_light .sidebar_content > .sidebar_link {
+  color: #1F1F1F;
+}
+.sidebar_light .sidebar_content > .sidebar_link::before {
+  background-color: #ADADAD;
+}
+.sidebar_light .sidebar_content > .sidebar_link:hover::before {
+  background-color: #0A6CFF;
+}
+.sidebar_light .sidebar_content > .sidebar_link.active {
+  background-color: rgba(10, 108, 255, 0.2);
+}
+.sidebar_light .sidebar_content > .sidebar_link.active::before {
+  background-color: #0A6CFF;
+}
+.sidebar_light .sidebar_content > .sidebar_link_section {
+  background-color: #E0E0E0;
+  color: #1F1F1F;
+}
+.sidebar_light .sidebar_content > .sidebar_link_title {
+  color: #1F1F1F;
+}
+.sidebar_light .sidebar_icon {
+  background-color: #F3F3F3;
+}
+.sidebar_light .sidebar_icon_bar {
+  background-color: #494949;
+}
+.sidebar_light .sidebar_icon_bar::before, .sidebar_light .sidebar_icon_bar::after {
+  background-color: #494949;
+}
+.sidebar_light .sidebar_icon_active {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+@media (min-width: 992px) {
+  .sidebar_content {
+    width: 100%;
+    max-width: 300px;
+  }
+  .sidebar_content > a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sidebar_icon {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=_sidebars.css.map */

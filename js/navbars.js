@@ -1,19 +1,21 @@
-/*document.querySelector(".navbar_icon").addEventListener("click", function(){
-    document.querySelector(".navbar_icon_bar").classList.toggle("navbar_icon_active");
-    document.querySelector(".navbar_content").classList.toggle("active");
+// document.querySelector(".navbar_icon").addEventListener("click", function(){
+//     document.querySelector(".navbar_icon_bar").classList.toggle("navbar_icon_active");
+//     document.querySelector(".navbar_content").classList.toggle("active");
+//
+// });
 
-});
-*/
 
-export class Navbars{
+class Navbar{
 
     constructor() {
         this.navbar_icon_bar = document.querySelector(".navbar_icon_bar");
         this.navbar_content = document.querySelector(".navbar_content");
 
+
     }
 
     toggleNavbar(e){
+        console.log("salut");
         this.navbar_icon_bar.classList.toggle("navbar_icon_active");
         this.navbar_content.classList.toggle("active");
     }
@@ -23,3 +25,5 @@ export class Navbars{
     }
 
 }
+
+export default Navbar

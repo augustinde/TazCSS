@@ -2,6 +2,10 @@
 *.css.map
 *.sass.map
 *.scss.map
+
 tazcss.css
 tazcss.scss
+
 .idea
+
+logo.png

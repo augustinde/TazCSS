@@ -1,11 +1,11 @@
+
 .table{
 
 	box-sizing:border-box;
 	width:100%;
-	background-color:#fff;
 	border-collapse:collapse;
 	margin-bottom:1rem;
-	border-color:$color-light-7;
+	border-color:$color-dark-5;
 
 	thead,
 	tbody,
@@ -31,44 +31,59 @@
 		border-bottom-width:2px;
 	}
 
+	tr{
+		background-color:$color-blue-1;
+	}
+
 	td,
 	th{
 		padding:0.6rem;
 	}
 
 
-	&_primary{
-		background-color:$color-blue-1;
+	&_light tr,
+	& tr.table_light{
+		background-color:$color-light-1;
 	}
 
-	&_secondary{
+	&_grey tr,
+	& tr.table_grey{
 		background-color:$color-grey-1;
 	}
 
-	&_warn{
+	&_warn tr,
+	& tr.table_warn{
 		background-color:$color-orange-1;
 	}
 
-	&_error{
+	&_error tr,
+	& tr.table_error{
 		background-color:$color-red-1;
 	}
 
-	&_success{
+	&_success tr,
+	& tr.table_success{
 		background-color:$color-green-1;
 	}
-	&_dark{
+	&_dark tr,
+	& tr.table_dark{
 		background-color:$color-dark-5;
 		color:$color-light-1;
 	}
 
+	&_dark{
+		border-color:$color-light-1;
+	}
+
 	&_striped{
 		> tbody > tr:nth-of-type(odd){
-			background-color:rgba(0,0,0,0.05);
+			filter:brightness(104%);
 		}
 	}
 
 	&_hover > tbody > tr:hover{
-		background-color:rgba(0,0,0,0.075);
+
+		filter:brightness(90%);
 	}
 
 	&_small{

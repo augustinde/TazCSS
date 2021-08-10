@@ -1,3 +1,32 @@
+
+$color-info:$color-blue-6;
+$color-info-hover:$color-blue-5;
+$color-info-active:$color-blue-4;
+
+$color-grey:$color-grey-5;
+$color-grey-hover:$color-grey-4;
+$color-grey-active:$color-grey-3;
+
+$color-error:$color-red-5;
+$color-error-hover:$color-red-4;
+$color-error-active:$color-red-3;
+
+$color-success:$color-green-6;
+$color-success-hover:$color-green-5;
+$color-success-active:$color-green-4;
+
+$color-warn:$color-orange-6;
+$color-warn-hover:$color-orange-5;
+$color-warn-active:$color-orange-3;
+
+$color-dark:$color-dark-5;
+$color-dark-hover:$color-dark-4;
+$color-dark-active:$color-dark-1;
+
+$color-light:$color-light-3;
+$color-light-hover:$color-light-2;
+$color-light-active:$color-light-1;
+
 .btn{
 	outline:none;
 	border:none;
@@ -14,322 +43,349 @@
 	color:#000;
 	margin:4px;
 
-	&_rounded{
-		border-radius: 3px;
+	&.btn_rounded{
+		border-radius:3px;
 	}
 
-	&_left{
-		margin-right: auto;
-		display: block;
+	&.btn_left{
+		margin-right:auto;
+		display:block;
 	}
 
-	&_center{
-		margin: auto;
-		display: block;
+	&.btn_center{
+		margin:auto;
+		display:block;
 	}
 
-	&_right{
-		margin-left: auto;
-		display: block;
+	&.btn_right{
+		margin-left:auto;
+		display:block;
 	}
 
-	&_block{
-		width: 100%;
+	&.btn_block{
+		width:100%;
+
 	}
 
-	&_small{
+	&.btn_small{
 		padding:8px;
 		font-size:12px;
 	}
 
-	&_large{
+	&.btn_large{
 		padding:14px 16px;
 		font-size:18px;
 	}
 
-	&_icon {
-		display: flex;
-		align-items: center;
 
-		&::before {
-			vertical-align: middle;
-			font-family: "Font Awesome 5 Free";
-			font-style: normal;
-			font-variant-caps: normal;
-			font-variant-ligatures: normal;
-			font-weight: 900;
-			font-size: 1.3em;
-			height: 16px;
-			line-height: 17px;
-			margin-right: 12px;
-			text-rendering: auto;
-			width: 16px;
-			-webkit-font-smoothing: antialiased;
-		}
+	&.btn_icon{
+		display:flex;
+		align-items:center;
 	}
 
-	&_primary{
-		background-color: $color-primary;
+	&.btn_icon::before{
+		vertical-align:middle;
+		font-family: "Font Awesome 5 Free";
+		font-style: normal;
+		font-variant-caps: normal;
+		font-variant-ligatures: normal;
+		font-weight: 900;
+		font-size:1.3em;
+		height: 16px;
+		line-height: 17px;
+		margin-right: 12px;
+		text-rendering: auto;
+		width: 16px;
+		-webkit-font-smoothing: antialiased;
+	}
+
+}
+
+
+.btn_info{
+	background-color: $color-info;
+	color:#fff;
+
+	&:hover{
+		background: $color-info-hover radial-gradient(circle, transparent 1%, $color-info-hover 1%) center/15000%;
 		color:#fff;
-
-		&:hover{
-			background: $color-primary-hover radial-gradient(circle, transparent 1%, $color-primary-hover 1%) center/15000%;
-			color:#fff;
-		}
-
-		&:active{
-			background-color: $color-primary-active;
-			background-size:100%;
-			transition:background 0s;
-		}
-
-		&.btn_icon::before{
-			content:"\f05a";
-		}
 	}
 
-	&_secondary{
-		background-color: $color-secondary;
+	&:active{
+		background-color: $color-info-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+
+	&.btn_icon::before{
+		content:"\f05a";
+	}
+
+}
+
+
+.btn_outline_info{
+	background-color:#fff;
+	color: $color-info;
+	border:1px solid $color-info;
+
+	&:hover{
+		background: $color-info-hover radial-gradient(circle, transparent 1%, $color-info-hover 1%) center/15000%;
 		color:#fff;
-
-		&:hover{
-			background: $color-secondary-hover radial-gradient(circle, transparent 1%, $color-secondary-hover 1%) center/15000%;
-			color:#fff;
-		}
-
-		&:active{
-			background-color:$color-secondary-active;
-			background-size:100%;
-			transition:background 0s;
-		}
 	}
 
-	&_error{
-		background-color:$color-error;
+	&:active{
+		background-color: $color-info-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+
+	&.btn_icon::before{
+		content:"\f05a";
+	}
+}
+
+
+.btn_grey{
+	background-color: $color-grey;
+	color:#fff;
+
+	&:hover{
+		background: $color-grey-hover radial-gradient(circle, transparent 1%, $color-grey-hover 1%) center/15000%;
 		color:#fff;
-
-		&:hover{
-			background: $color-error-hover radial-gradient(circle, transparent 1%, $color-error-hover 1%) center/15000%;
-			color:#fff;
-		}
-
-		&:active{
-			background-color:$color-error-active;
-			background-size:100%;
-			transition:background 0s;
-		}
-
-		&.btn_icon::before{
-			content:"\f00d";
-		}
 	}
 
-	&_success{
-		background-color: $color-success;
+	&:active{
+		background-color:$color-grey-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+}
+
+
+.btn_outline_grey{
+	background-color:#fff;
+	color: $color-grey;
+	border:1px solid $color-grey;
+
+	&:hover{
+		background: $color-grey-hover radial-gradient(circle, transparent 1%, $color-grey-hover 1%) center/15000%;
 		color:#fff;
-
-		&:hover{
-			background: $color-success-hover radial-gradient(circle, transparent 1%, $color-success-hover 1%) center/15000%;
-			color:#fff;
-		}
-
-		&:active{
-			background-color:$color-success-active;
-			background-size:100%;
-			transition:background 0s;
-		}
-
-		&.btn_icon::before{
-			content:"\f058";
-		}
 	}
 
-	&_warn{
-		background-color:$color-warn;
+	&:active{
+		background-color:$color-grey-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+}
+
+
+.btn_error{
+	background-color:$color-error;
+	color:#fff;
+
+
+	&:hover{
+		background: $color-error-hover radial-gradient(circle, transparent 1%, $color-error-hover 1%) center/15000%;
 		color:#fff;
-
-		&:hover{
-			background: $color-warn-hover radial-gradient(circle, transparent 1%, $color-warn-hover 1%) center/15000%;
-			color:#fff;
-		}
-
-		&:active{
-			background-color:$color-warn-active;
-			background-size:100%;
-			transition:background 0s;
-		}
-
-		&.btn_icon::before{
-			content:"\f00d";
-		}
 	}
 
-	&_dark{
-		background-color:$color-dark;
+	&:active{
+		background-color:$color-error-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+
+	&.btn_icon::before{
+		content:"\f00d";
+	}
+}
+
+
+.btn_outline_error{
+	background-color:#fff;
+	color:$color-error;
+	border:1px solid $color-error;
+
+
+	&:hover{
+		background: $color-error-hover radial-gradient(circle, transparent 1%, $color-error-hover 1%) center/15000%;
 		color:#fff;
-
-		&:hover{
-			background: $color-dark-hover radial-gradient(circle, transparent 1%, $color-dark-hover 1%) center/15000%;
-			color:#fff;
-		}
-
-		&:active{
-			background-color:$color-dark-active;
-			background-size:100%;
-			transition:background 0s;
-		}
 	}
 
-	&_light{
-		background-color:$color-light;
+	&:active{
+		background-color:$color-error-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+
+	&.btn_icon::before{
+		content:"\f00d";
+	}
+}
+
+
+.btn_success{
+	background-color: $color-success;
+	color:#fff;
+
+
+	&:hover{
+		background: $color-success-hover radial-gradient(circle, transparent 1%, $color-success-hover 1%) center/15000%;
+		color:#fff;
+	}
+
+	&:active{
+		background-color:$color-success-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+
+	&.btn_icon::before{
+		content:"\f058";
+	}
+}
+
+
+.btn_outline_success{
+	background-color:#fff;
+	color:$color-success;
+	border:1px solid $color-success;
+
+
+	&:hover{
+		background: $color-success-hover radial-gradient(circle, transparent 1%, $color-success-hover 1%) center/15000%;
+		color:#fff;
+	}
+
+	&:active{
+		background-color:$color-success-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+
+	&.btn_icon::before{
+		content:"\f058";
+	}
+}
+
+
+.btn_warn{
+	background-color:$color-warn;
+	color:#fff;
+
+	&:hover{
+		background: $color-warn-hover radial-gradient(circle, transparent 1%, $color-warn-hover 1%) center/15000%;
+		color:#fff;
+	}
+
+	&:active{
+		background-color:$color-warn-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+
+	&.btn_icon::before{
+		content:"\f00d";
+	}
+}
+
+
+.btn_outline_warn{
+	background-color:#fff;
+	color:$color-warn;
+	border:1px solid $color-warn;
+
+
+	&:hover{
+		background: $color-warn-hover radial-gradient(circle, transparent 1%, $color-warn-hover 1%) center/15000%;
+		color:#fff;
+	}
+
+	&:active{
+		background-color:$color-warn-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+
+	&.btn_icon::before{
+		content:"\f00d";
+	}
+}
+
+
+.btn_dark{
+	background-color:$color-dark;
+	color:#fff;
+
+
+	&:hover{
+		background: $color-dark-hover radial-gradient(circle, transparent 1%, $color-dark-hover 1%) center/15000%;
+		color:#fff;
+	}
+
+	&:active{
+		background-color:$color-dark-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+}
+
+
+.btn_outline_dark{
+	background-color:#fff;
+	color:$color-dark;
+	border:1px solid $color-dark;
+
+
+	&:hover{
+		background: $color-dark-hover radial-gradient(circle, transparent 1%, $color-dark-hover 1%) center/15000%;
+		color:#fff;
+	}
+
+	&:active{
+		background-color:$color-dark-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+}
+
+
+.btn_light{
+	background-color:$color-light;
+	color: $color-dark;
+
+
+	&:hover{
+		background: $color-light-hover radial-gradient(circle, transparent 1%, $color-light-hover 1%) center/15000%;
 		color: $color-dark;
-
-		&:hover{
-			background: $color-light-hover radial-gradient(circle, transparent 1%, $color-light-hover 1%) center/15000%;
-			color: $color-dark;
-		}
-
-		&:active{
-			background-color:$color-light-active;
-			background-size:100%;
-			transition:background 0s;
-		}
 	}
 
-	&_outline{
-		background-color:#fff;
-
-		&_primary {
-			color: $color-primary;
-			border: 1px solid $color-primary;
-
-			&:hover {
-				background: $color-primary-hover radial-gradient(circle, transparent 1%, $color-primary-hover 1%) center/15000%;
-				color: #fff;
-			}
-
-			&:active {
-				background-color: $color-primary-active;
-				background-size: 100%;
-				transition: background 0s;
-			}
-
-			&.btn_icon::before {
-				content: "\f05a";
-			}
-		}
-
-		&_secondary{
-			color: $color-secondary;
-			border:1px solid $color-secondary;
-
-			&:hover{
-				background: $color-secondary-hover radial-gradient(circle, transparent 1%, $color-secondary-hover 1%) center/15000%;
-				color:#fff;
-			}
-
-			&:active{
-				background-color:$color-secondary-active;
-				background-size:100%;
-				transition:background 0s;
-			}
-		}
-
-		&_error{
-			color:$color-error;
-			border:1px solid $color-error;
-
-			&:hover{
-				background: $color-error-hover radial-gradient(circle, transparent 1%, $color-error-hover 1%) center/15000%;
-				color:#fff;
-			}
-
-			&:active{
-				background-color:$color-error-active;
-				background-size:100%;
-				transition:background 0s;
-			}
-
-			&.btn_icon::before{
-				content:"\f00d";
-			}
-		}
-
-		&_success{
-			color:$color-success;
-			border:1px solid $color-success;
-
-			&:hover{
-				background: $color-success-hover radial-gradient(circle, transparent 1%, $color-success-hover 1%) center/15000%;
-				color:#fff;
-			}
-
-			&:active{
-				background-color:$color-success-active;
-				background-size:100%;
-				transition:background 0s;
-			}
-
-			&.btn_icon::before{
-				content:"\f058";
-			}
-		}
-
-		&_warn{
-			color:$color-warn;
-			border:1px solid $color-warn;
+	&:active{
+		background-color:$color-light-active;
+		background-size:100%;
+		transition:background 0s;
+	}
+}
 
 
-			&:hover{
-				background: $color-warn-hover radial-gradient(circle, transparent 1%, $color-warn-hover 1%) center/15000%;
-				color:#fff;
-			}
+.btn_outline_light{
+	background-color:#fff;
+	color: $color-dark;
+	border:1px solid $color-light;
 
-			&:active{
-				background-color:$color-warn-active;
-				background-size:100%;
-				transition:background 0s;
-			}
 
-			&.btn_icon::before{
-				content:"\f00d";
-			}
-		}
-
-		&_dark{
-			color:$color-dark;
-			border:1px solid $color-dark;
-
-			&:hover{
-				background: $color-dark-hover radial-gradient(circle, transparent 1%, $color-dark-hover 1%) center/15000%;
-				color:#fff;
-			}
-
-			&:active{
-				background-color:$color-dark-active;
-				background-size:100%;
-				transition:background 0s;
-			}
-		}
-
-		&_light{
-			color: $color-dark;
-			border:1px solid $color-light;
-
-			&:hover{
-				background: $color-light-hover radial-gradient(circle, transparent 1%, $color-light-hover 1%) center/15000%;
-				color: $color-dark;
-			}
-
-			&:active{
-				background-color:$color-light-active;
-				background-size:100%;
-				transition:background 0s;
-			}
-		}
-
+	&:hover{
+		background: $color-light-hover radial-gradient(circle, transparent 1%, $color-light-hover 1%) center/15000%;
+		color: $color-dark;
 	}
 
+	&:active{
+		background-color:$color-light-active;
+		background-size:100%;
+		transition:background 0s;
+	}
 }
 
 
@@ -347,3 +403,87 @@
 
 
 
+//BUTTON GROUP
+
+.btn_group{
+	display:flex;
+	position:relative;
+	vertical-align:middle;
+	margin:4px 2px;
+	flex-flow:row wrap;
+
+	&.btn_group_small > .btn{
+		padding:8px;
+		font-size:12px;
+	}
+
+	&.btn_group_large > .btn{
+		padding:14px 16px;
+		font-size:18px;
+	}
+
+
+	&.btn_group_rounded > .btn{
+		border-radius:3px;
+	}
+
+	&>.btn:not(:last-child){
+		border-top-right-radius:0px;
+		border-bottom-right-radius:0px;
+	}
+
+	&>.btn:not(:first-child){
+		border-top-left-radius:0px;
+		border-bottom-left-radius:0px;
+	}
+
+	&>.btn{
+
+		margin:0px;
+
+		&.btn_outline_info:not(:first-child){
+			margin-left:-1px;
+		}
+	}
+
+	&.btn_group_left{
+		justify-content:flex-start;
+	}
+
+	&.btn_group_center{
+		justify-content:center;
+	}
+
+	&.btn_group_right{
+		justify-content:flex-end;
+	}
+
+	&.btn_group_column{
+
+		flex-direction:column;
+
+		&.btn_group_rounded > .btn{
+			border-radius:3px;
+		}
+
+		&>.btn:not(:last-child){
+			border-bottom-right-radius:0px;
+			border-bottom-left-radius:0px;
+		}
+
+		&>.btn:not(:first-child){
+			border-top-left-radius:0px;
+			border-top-right-radius:0px;
+		}
+
+		>.btn{
+			width:fit-content;
+			margin-top:-1px;
+			margin-left:-1px;
+		}
+
+		&.btn_group_block > .btn{
+			width:100% !important;
+		}
+	}
+}

@@ -1,20 +1,19 @@
+
 .load_circle{
 	background-color:transparent !important;
 	width:40px;
 	height:40px;
 	border-radius:50%;
 	animation: load_circle_animation 4s linear infinite;
-
-	&_primary{
-		border:3px dotted $color-blue-5;
-	}
-
-	&_secondary{
-		border:3px dotted $color-grey-5;
-	}
 }
 
+.load_circle_one{
+	border:3px dotted $color-blue-5;
+}
 
+.load_circle_two{
+	border:3px dotted $color-grey-5;
+}
 
 @keyframes load_circle_animation{
 	0%{
@@ -32,17 +31,15 @@
 	width:40px;
 	height:40px;
 	animation:load_square_animation 2s linear infinite;
-
-
-	&_primary{
-		background-color: $color-blue-5;
-	}
-
-	&_secondary{
-		background-color: $color-grey-5;
-	}
 }
 
+.load_square_one{
+	background-color: $color-blue-5;
+}
+
+.load_square_two{
+	background-color: $color-grey-5;
+}
 
 @keyframes load_square_animation{
 	0%{
@@ -63,17 +60,15 @@
 	width:30px;
 	border-radius:50%;
 	animation:load_pulse_animation 1.2s linear infinite;
-
-	&_primary{
-		border:8px solid $color-blue-5;
-	}
-
-	&_secondary{
-		border:8px solid $color-grey-5;
-	}
-
 }
 
+.load_pulse_one{
+	border:8px solid $color-blue-5;
+}
+
+.load_pulse_two{
+	border:8px solid $color-grey-5;
+}
 
 @keyframes load_pulse_animation{
 	0%{
@@ -109,24 +104,28 @@
 		margin:5px;
 		animation:load_fill_animation 2.5s 0.2s linear infinite;
 	}
+}
 
-	&_primary{
-		background-color: $color-blue-5;
 
-		&::before{
-			background-color: $color-blue-3;
-		}
 
+
+.load_fill_one{
+	background-color: $color-blue-5;
+
+	&::before{
+		background-color: $color-blue-3;
 	}
 
-	&_secondary{
-		background-color: $color-grey-5;
+}
 
-		&::before{
-			background-color: $color-grey-3;
-		}
+.load_fill_two{
+	background-color: $color-grey-5;
+
+	&::before{
+		background-color: $color-grey-3;
 	}
 }
+
 
 @keyframes load_fill_animation{
 	0%{
@@ -140,17 +139,19 @@
 	}
 }
 
-&_left{
+
+
+.load_left{
 	margin-right:auto;
 	display:block;
 }
 
-&_center{
+.load_center{
 	margin:auto;
 	display:block;
 }
 
-&_right{
+.load_right{
 	margin-left:auto;
 	display:block;
 }
