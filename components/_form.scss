@@ -1,5 +1,19 @@
 .form{
 
+	&_container{
+		position: relative;
+	}
+
+	&_content{
+		padding: 16px;
+
+		&.center{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
 	&_select{
 		background-color:#fff !important;
 		padding:0.4rem 0.8rem;
@@ -19,18 +33,20 @@
 	&_textarea,
 	&_select{
 		position:relative;
-		display:block;
 		margin:0.2rem 0rem 1rem 0rem;
 		outline:none;
 		padding:0.4rem 0.4rem 0.2rem 0.4rem;
-		width:100%;
 		font-size:1rem;
 		line-height:1.5;
 		border:1px solid $color-grey-3;
 		appearance:none;
 		-webkit-appearance:none;
 		background-color:#fff;
-		background-clip:padding-box;
+
+		&_block{
+			display: block;
+			width: 100%;
+		}
 
 		&_rounded{
 			border-radius:5px;
@@ -38,6 +54,18 @@
 	}
 
 	&_input{
+
+		&_error{
+			color:$color-red;
+			font-size:1rem;
+			margin: 5px 5px 10px 5px;
+		}
+
+		&[type="text"]:focus,
+		&[type="email"]:focus,
+		&[type="password"]:focus{
+			border: 2px solid;
+		}
 
 		&:disabled,
 		&:read-only{

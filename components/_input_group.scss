@@ -1,3 +1,14 @@
+.form_input_group_content_default{
+	display: flex;
+	align-items: center;
+	line-height: 1.5;
+	text-align: center;
+	border: 1px solid $color-grey-2;
+	padding: 0.4rem 0.7rem;
+	margin: 0.2rem 0rem 1rem 0rem;
+	background-color: $color-light-2;
+}
+
 .form_input_group{
 	display:flex;
 	position:relative;
@@ -8,16 +19,18 @@
 	& > .form_input{
 		border-color:$color-grey-2;
 
-		&_group_text{
-			display:flex;
-			align-items:center;
-			line-height:1.5;
-			text-align:center;
-			border:1px solid $color-grey-2;
-			padding:0.4rem 0.7rem;
-			margin:0.2rem 0rem 1rem 0rem;
-			background-color:$color-light-2;
+		&_group{
+			&_text {
+
+				@extend .form_input_group_content_default;
+			}
+
+			&_icon{
+				@extend .form_input_group_content_default;
+				cursor: pointer;
+			}
 		}
+
 	}
 
 	& > :not(:first-child){
