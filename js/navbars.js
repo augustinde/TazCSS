@@ -1,29 +1,17 @@
-// document.querySelector(".navbar_icon").addEventListener("click", function(){
-//     document.querySelector(".navbar_icon_bar").classList.toggle("navbar_icon_active");
-//     document.querySelector(".navbar_content").classList.toggle("active");
-//
-// });
-
-
 class Navbar{
 
-    constructor() {
-        this.navbar_icon_bar = document.querySelector(".navbar_icon_bar");
-        this.navbar_content = document.querySelector(".navbar_content");
-
+    constructor(){
+        this.navbar = document.querySelector('.navbar');
+        this.navbar_icon = this.navbar.querySelector('.navbar_icon');
+        this.navbar_icon.addEventListener("click", this.toggleNavbar);
 
     }
 
-    toggleNavbar(e){
-        console.log("salut");
-        this.navbar_icon_bar.classList.toggle("navbar_icon_active");
-        this.navbar_content.classList.toggle("active");
-    }
-
-    listener(){
-        document.querySelector(".navbar_icon").addEventListener("click", this.toggleNavbar, false);
+    toggleNavbar(){
+        this.parentNode.querySelector('.navbar_content').classList.toggle("active");
+        this.childNodes[1].classList.toggle("navbar_icon_active");
     }
 
 }
 
-export default Navbar
+export default Navbar;
