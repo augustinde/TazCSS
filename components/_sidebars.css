@@ -1,12 +1,436 @@
+.blue-100 {
+  background-color: #e4f4fe;
+}
+
+.blue-200 {
+  background-color: #addffc;
+}
+
+.blue-300 {
+  background-color: #76cafb;
+}
+
+.blue-400 {
+  background-color: #3fb5f9;
+}
+
+.blue-500 {
+  background-color: #08a0f7;
+}
+
+.blue-600 {
+  background-color: #067cc0;
+}
+
+.blue-700 {
+  background-color: #045989;
+}
+
+.blue-800 {
+  background-color: #033552;
+}
+
+.blue-900 {
+  background-color: #01121b;
+}
+
+.green-100 {
+  background-color: #e9f9f0;
+}
+
+.green-200 {
+  background-color: #bcedd1;
+}
+
+.green-300 {
+  background-color: #8fe1b2;
+}
+
+.green-400 {
+  background-color: #62d593;
+}
+
+.green-500 {
+  background-color: #34c471;
+}
+
+.green-600 {
+  background-color: #2a9d5a;
+}
+
+.green-700 {
+  background-color: #1e7041;
+}
+
+.green-800 {
+  background-color: #124327;
+}
+
+.green-900 {
+  background-color: #06160d;
+}
+
+.yellow-100 {
+  background-color: #fff8e3;
+}
+
+.yellow-200 {
+  background-color: #fee9ab;
+}
+
+.yellow-300 {
+  background-color: #fdda74;
+}
+
+.yellow-400 {
+  background-color: #fccb3c;
+}
+
+.yellow-500 {
+  background-color: #fbbd08;
+}
+
+.yellow-600 {
+  background-color: #c39203;
+}
+
+.yellow-700 {
+  background-color: #8b6802;
+}
+
+.yellow-800 {
+  background-color: #543f01;
+}
+
+.yellow-900 {
+  background-color: #1c1500;
+}
+
+.orange-100 {
+  background-color: #fdeee4;
+}
+
+.orange-200 {
+  background-color: #facdaf;
+}
+
+.orange-300 {
+  background-color: #f7ab79;
+}
+
+.orange-400 {
+  background-color: #f48a43;
+}
+
+.orange-500 {
+  background-color: #f1680e;
+}
+
+.orange-600 {
+  background-color: #bc510b;
+}
+
+.orange-700 {
+  background-color: #863a08;
+}
+
+.orange-800 {
+  background-color: #502305;
+}
+
+.orange-900 {
+  background-color: #1b0c02;
+}
+
+.pink-100 {
+  background-color: #fbe7ee;
+}
+
+.pink-200 {
+  background-color: #f3b6cb;
+}
+
+.pink-300 {
+  background-color: #ec85a8;
+}
+
+.pink-400 {
+  background-color: #e45485;
+}
+
+.pink-500 {
+  background-color: #df3670;
+}
+
+.pink-600 {
+  background-color: #ab1b4d;
+}
+
+.pink-700 {
+  background-color: #7a1337;
+}
+
+.pink-800 {
+  background-color: #490c21;
+}
+
+.pink-900 {
+  background-color: #18040b;
+}
+
+.red-100 {
+  background-color: #fbe7e7;
+}
+
+.red-200 {
+  background-color: #f3b6b6;
+}
+
+.red-300 {
+  background-color: #eb8686;
+}
+
+.red-400 {
+  background-color: #e35555;
+}
+
+.red-500 {
+  background-color: #db2828;
+}
+
+.red-600 {
+  background-color: #aa1c1c;
+}
+
+.red-700 {
+  background-color: #791414;
+}
+
+.red-800 {
+  background-color: #490c0c;
+}
+
+.red-900 {
+  background-color: #180404;
+}
+
+.lime-100 {
+  background-color: #f2f9e9;
+}
+
+.lime-200 {
+  background-color: #d8ecbd;
+}
+
+.lime-300 {
+  background-color: #bedf92;
+}
+
+.lime-400 {
+  background-color: #a3d266;
+}
+
+.lime-500 {
+  background-color: #8cc63f;
+}
+
+.lime-600 {
+  background-color: #6b992d;
+}
+
+.lime-700 {
+  background-color: #4c6d20;
+}
+
+.lime-800 {
+  background-color: #2e4213;
+}
+
+.lime-900 {
+  background-color: #0f1606;
+}
+
+.brown-100 {
+  background-color: #f7eeeb;
+}
+
+.brown-200 {
+  background-color: #e6ccc3;
+}
+
+.brown-300 {
+  background-color: #d5ab9b;
+}
+
+.brown-400 {
+  background-color: #c58973;
+}
+
+.brown-500 {
+  background-color: #b4674b;
+}
+
+.brown-600 {
+  background-color: #8c503a;
+}
+
+.brown-700 {
+  background-color: #64392a;
+}
+
+.brown-800 {
+  background-color: #3c2219;
+}
+
+.brown-900 {
+  background-color: #140b08;
+}
+
+.grey-100 {
+  background-color: #f1f1f1;
+}
+
+.grey-200 {
+  background-color: #d4d4d4;
+}
+
+.grey-300 {
+  background-color: #b8b8b8;
+}
+
+.grey-400 {
+  background-color: #9c9c9c;
+}
+
+.grey-500 {
+  background-color: #767676;
+}
+
+.grey-600 {
+  background-color: #636363;
+}
+
+.grey-700 {
+  background-color: #474747;
+}
+
+.grey-800 {
+  background-color: #2a2a2a;
+}
+
+.grey-900 {
+  background-color: #0e0e0e;
+}
+
+.purple-100 {
+  background-color: #f1edf5;
+}
+
+.purple-200 {
+  background-color: #d5c8e1;
+}
+
+.purple-300 {
+  background-color: #b9a4cc;
+}
+
+.purple-400 {
+  background-color: #9d80b8;
+}
+
+.purple-500 {
+  background-color: #9271b0;
+}
+
+.purple-600 {
+  background-color: #64477f;
+}
+
+.purple-700 {
+  background-color: #48335b;
+}
+
+.purple-800 {
+  background-color: #2b1e37;
+}
+
+.purple-900 {
+  background-color: #0e0a12;
+}
+
+.black-100 {
+  background-color: #d2d2d2;
+}
+
+.black-200 {
+  background-color: #b1b1b1;
+}
+
+.black-300 {
+  background-color: #848484;
+}
+
+.black-400 {
+  background-color: #585858;
+}
+
+.black-500 {
+  background-color: #202020;
+}
+
+.black-600 {
+  background-color: #181818;
+}
+
+.black-700 {
+  background-color: #121212;
+}
+
+.black-800 {
+  background-color: #0b0b0b;
+}
+
+.black-900 {
+  background-color: #060606;
+}
+
+.dark-100 {
+  background-color: #404a5d;
+}
+
+.dark-200 {
+  background-color: #353c50;
+}
+
+.dark-300 {
+  background-color: #1f2937;
+}
+
+.dark-400 {
+  background-color: #111827;
+}
+
+.light-100 {
+  background-color: #ffffff;
+}
+
+.light-200 {
+  background-color: #f1f1f1;
+}
+
+.light-300 {
+  background-color: #e6e6e6;
+}
+
 .default_link_sidebar, .sidebar_content > .sidebar_link_title, .sidebar_content > .sidebar_link_section, .sidebar_content > .sidebar_link {
   text-decoration: none;
-  color: #F3F3F3;
+  color: #ffffff;
   padding: 20px;
   word-break: break-word;
 }
 
 .sidebar {
-  background-color: #494949;
+  background-color: #111827;
   display: flex;
   height: 100%;
   position: fixed;
@@ -36,23 +460,23 @@
   width: 5px;
   height: 100%;
   position: absolute;
-  background-color: #292929;
+  background-color: #111827;
   top: 0;
   left: 0;
   transition: background-color 0.25s ease-in-out;
 }
 .sidebar_content > .sidebar_link:hover::before {
-  background-color: #0A6CFF;
+  background-color: #08a0f7;
 }
 .sidebar_content > .sidebar_link.active {
-  background-color: rgba(10, 108, 255, 0.2);
+  background-color: rgba(8, 160, 247, 0.2);
 }
 .sidebar_content > .sidebar_link.active::before {
-  background-color: #0A6CFF;
+  background-color: #08a0f7;
 }
 .sidebar_content > .sidebar_link_section {
   text-align: center;
-  background-color: #3D3D3D;
+  background-color: #111827;
   font-weight: bold;
 }
 .sidebar_content > .sidebar_link_title {
@@ -86,14 +510,14 @@
 .sidebar_icon {
   height: 100%;
   width: 50px;
-  background-color: #3D3D3D;
+  background-color: #111827;
   top: 0;
   cursor: pointer;
 }
 .sidebar_icon_bar {
   margin: auto 7px;
   height: 5px;
-  background-color: #EBEBEB;
+  background-color: #ffffff;
   top: 25px;
   position: absolute;
   width: 35px;
@@ -106,7 +530,7 @@
   width: 100%;
   content: "";
   height: 5px;
-  background-color: #EBEBEB;
+  background-color: #ffffff;
   position: absolute;
 }
 .sidebar_icon_bar::after {
@@ -133,38 +557,38 @@
   transition: transform 0.25s ease-in-out 0.35s, bottom 0.25s ease-in-out;
 }
 .sidebar_light {
-  background-color: #F3F3F3;
+  background-color: #ffffff;
 }
 .sidebar_light .sidebar_content > .sidebar_link {
-  color: #1F1F1F;
+  color: #111827;
 }
 .sidebar_light .sidebar_content > .sidebar_link::before {
-  background-color: #ADADAD;
+  background-color: #e6e6e6;
 }
 .sidebar_light .sidebar_content > .sidebar_link:hover::before {
-  background-color: #0A6CFF;
+  background-color: #08a0f7;
 }
 .sidebar_light .sidebar_content > .sidebar_link.active {
-  background-color: rgba(10, 108, 255, 0.2);
+  background-color: rgba(8, 160, 247, 0.2);
 }
 .sidebar_light .sidebar_content > .sidebar_link.active::before {
-  background-color: #0A6CFF;
+  background-color: #08a0f7;
 }
 .sidebar_light .sidebar_content > .sidebar_link_section {
-  background-color: #E0E0E0;
-  color: #1F1F1F;
+  background-color: #e6e6e6;
+  color: #111827;
 }
 .sidebar_light .sidebar_content > .sidebar_link_title {
-  color: #1F1F1F;
+  color: #111827;
 }
 .sidebar_light .sidebar_icon {
-  background-color: #F3F3F3;
+  background-color: #ffffff;
 }
 .sidebar_light .sidebar_icon_bar {
-  background-color: #494949;
+  background-color: #111827;
 }
 .sidebar_light .sidebar_icon_bar::before, .sidebar_light .sidebar_icon_bar::after {
-  background-color: #494949;
+  background-color: #111827;
 }
 .sidebar_light .sidebar_icon_active {
   background-color: rgba(255, 255, 255, 0);

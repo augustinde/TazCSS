@@ -1,18 +1,9 @@
+
+form{
+	margin:16px;
+}
+
 .form{
-
-	&_container{
-		position: relative;
-	}
-
-	&_content{
-		padding: 16px;
-
-		&.center{
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
 
 	&_select{
 		background-color:#fff !important;
@@ -33,20 +24,18 @@
 	&_textarea,
 	&_select{
 		position:relative;
+		display:block;
 		margin:0.2rem 0rem 1rem 0rem;
 		outline:none;
 		padding:0.4rem 0.4rem 0.2rem 0.4rem;
+		width:100%;
 		font-size:1rem;
 		line-height:1.5;
-		border:1px solid $color-grey-3;
+		border:1px solid $color-grey-300;
 		appearance:none;
 		-webkit-appearance:none;
 		background-color:#fff;
-
-		&_block{
-			display: block;
-			width: 100%;
-		}
+		background-clip:padding-box;
 
 		&_rounded{
 			border-radius:5px;
@@ -55,22 +44,10 @@
 
 	&_input{
 
-		&_error{
-			color:$color-red;
-			font-size:1rem;
-			margin: 5px 5px 10px 5px;
-		}
-
-		&[type="text"]:focus,
-		&[type="email"]:focus,
-		&[type="password"]:focus{
-			border: 2px solid;
-		}
-
 		&:disabled,
 		&:read-only{
-			background-color:$color-light-3;
-			color:$color-grey-9;
+			background-color:$color-light-200;
+			color:$color-grey-900;
 		}
 
 		&::file-selector-button{
@@ -78,9 +55,9 @@
 			margin:-0.6rem 0.6rem -0.6rem -0.6rem;
 			pointer-events:none;
 			border:none;
-			border-right:1px solid $color-grey-3;
+			border-right:1px solid $color-grey-300;
 			outline:none;
-			color:$color-grey-9;
+			color:$color-grey-900;
 
 		}
 
@@ -93,12 +70,12 @@
 		}
 
 		&_valid{
-			border-color:$color-green-6;
+			border-color:$color-green-600;
 			border-width:2px;
 		}
 
 		&_invalid{
-			border-color:$color-red-6;
+			border-color:$color-red-600;
 			border-width:2px;
 		}
 
@@ -196,10 +173,10 @@
 
 					&:disabled,
 					&:read-only{
-						background-color:$color-light-3;
+						background-color:$color-light-200;
 
 						& + label{
-							color:$color-grey-9;
+							color:$color-grey-900;
 						}
 					}
 
@@ -232,7 +209,7 @@
 				appearance:none;
 				padding: 0;
 				border:none;
-				background-color:$color-light-3;
+				background-color:$color-light-200;
 				border-radius:16px;
 				height:20px;
 
@@ -277,7 +254,7 @@
 					appearance:none;
 					width:25px;
 					height:25px;
-					background-color:$color-red-8;
+					background-color:$color-red-800;
 					border:none;
 					cursor:pointer;
 				}
@@ -286,7 +263,7 @@
 					appearance:none;
 					width:30px;
 					height:30px;
-					background-color:$color-green-8;
+					background-color:$color-green-800;
 					border:none;
 					cursor:pointer;
 				}
@@ -297,55 +274,55 @@
 					&_primary{
 
 						&::-webkit-slider-thumb{
-							background-color:$color-blue-5;
+							background-color:$color-blue-500;
 						}
 
 						&::-moz-range-thumb{
-							background-color:$color-blue-5;
+							background-color:$color-blue-500;
 						}
 					}
 
 					&_secondary{
 
 						&::-webkit-slider-thumb{
-							background-color:$color-grey-5;
+							background-color:$color-grey-500;
 						}
 
 						&::-moz-range-thumb{
-							background-color:$color-grey-5;
+							background-color:$color-grey-500;
 						}
 					}
 
 					&_warn{
 
 						&::-webkit-slider-thumb{
-							background-color:$color-orange-5;
+							background-color:$color-orange-500;
 						}
 
 						&::-moz-range-thumb{
-							background-color:$color-orange-5;
+							background-color:$color-orange-500;
 						}
 					}
 
 					&_success{
 
 						&::-webkit-slider-thumb{
-							background-color:$color-green-5;
+							background-color:$color-green-500;
 						}
 
 						&::-moz-range-thumb{
-							background-color:$color-green-5;
+							background-color:$color-green-500;
 						}
 					}
 
 					&_error{
 
 						&::-webkit-slider-thumb{
-							background-color:$color-red-5;
+							background-color:$color-red-500;
 						}
 
 						&::-moz-range-thumb{
-							background-color:$color-red-5;
+							background-color:$color-red-500;
 						}
 					}
 				}

@@ -2,13 +2,13 @@
 
 .default_link_sidebar{
 	text-decoration: none;
-	color:$color-light-1;
+	color:$color-light-100;
 	padding: 20px;
 	word-break: break-word;
 }
 
 .sidebar{
-	background-color:$color-dark-5;
+	background-color:$color-dark-400;
 	display: flex;
 	height: 100%;
 	position: fixed;
@@ -41,28 +41,28 @@
 				width:5px;
 				height: 100%;
 				position: absolute;
-				background-color: $color-dark-8;
+				background-color: $color-dark-400;
 				top:0;
 				left:0;
 				transition: background-color 0.25s ease-in-out;
 			}
 
 			&:hover::before{
-				background-color:$color-blue-5;
+				background-color:$color-blue-500;
 			}
 
 			&.active{
 
-				background-color:rgba($color-blue-5,0.2);
+				background-color:rgba($color-blue-500,0.2);
 				&::before{
-					background-color:$color-blue-5;
+					background-color:$color-blue-500;
 				}
 			}
 
 			&_section{
 				@extend .default_link_sidebar;
 				text-align: center;
-				background-color: $color-dark-6;
+				background-color: $color-dark-400;
 				font-weight: bold;
 
 			}
@@ -110,14 +110,14 @@
 	&_icon{
 		height: 100%;
 		width:50px;
-		background-color: $color-dark-6;
+		background-color: $color-dark-400;
 		top:0;
 		cursor: pointer;
 
 		&_bar{
 			margin:auto 7px;
 			height: 5px;
-			background-color:$color-light;
+			background-color:$color-light-100;
 			top:25px;
 			position: absolute;
 			width:35px;
@@ -135,7 +135,7 @@
 				width:100%;
 				content:"";
 				height: 5px;
-				background-color: $color-light;
+				background-color: $color-light-100;
 				position: absolute;
 
 			}
@@ -177,7 +177,7 @@
 	}
 
 	&_light{
-		background-color:$color-light-1;
+		background-color:$color-light-100;
 
 		.sidebar{
 
@@ -185,31 +185,31 @@
 
 				& > .sidebar_link{
 
-					color:$color-dark-9;
+					color:$color-dark-400;
 
 					&::before {
-						background-color: $color-light-9;
+						background-color: $color-light-300;
 					}
 
 					&:hover::before{
-						background-color:$color-blue-5;
+						background-color:$color-blue-500;
 					}
 
 					&.active{
 
-						background-color:rgba($color-blue-5,0.2);
+						background-color:rgba($color-blue-500,0.2);
 						&::before{
-							background-color:$color-blue-5;
+							background-color:$color-blue-500;
 						}
 					}
 
 					&_section{
-						background-color: $color-light-4;
-						color:$color-dark-9;
+						background-color: $color-light-300;
+						color:$color-dark-400;
 
 					}
 					&_title {
-						color:$color-dark-9;
+						color:$color-dark-400;
 					}
 
 
@@ -219,17 +219,17 @@
 			}
 
 			&_icon{
-				background-color: $color-light-1;
+				background-color: $color-light-100;
 
 				&_bar{
 
-					background-color:$color-dark;
+					background-color:$color-dark-400;
 
 
 					&::before,
 					&::after{
 
-						background-color: $color-dark;
+						background-color: $color-dark-400;
 
 					}
 

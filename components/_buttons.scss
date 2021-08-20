@@ -1,32 +1,3 @@
-
-$color-info:$color-blue-6;
-$color-info-hover:$color-blue-5;
-$color-info-active:$color-blue-4;
-
-$color-grey:$color-grey-5;
-$color-grey-hover:$color-grey-4;
-$color-grey-active:$color-grey-3;
-
-$color-error:$color-red-5;
-$color-error-hover:$color-red-4;
-$color-error-active:$color-red-3;
-
-$color-success:$color-green-6;
-$color-success-hover:$color-green-5;
-$color-success-active:$color-green-4;
-
-$color-warn:$color-orange-6;
-$color-warn-hover:$color-orange-5;
-$color-warn-active:$color-orange-3;
-
-$color-dark:$color-dark-5;
-$color-dark-hover:$color-dark-4;
-$color-dark-active:$color-dark-1;
-
-$color-light:$color-light-3;
-$color-light-hover:$color-light-2;
-$color-light-active:$color-light-1;
-
 .btn{
 	outline:none;
 	border:none;
@@ -39,12 +10,16 @@ $color-light-active:$color-light-1;
 	background-position:center;
 	text-decoration:none;
 	font-family:sans-serif;
-	background-color: #EFEFEF;
-	color:#000;
+	background-color:$color-grey-400;
+	color:$color-light-100;
 	margin:4px;
 
+	& > .badge{
+		border-radius:100px;
+	}
+
 	&.btn_rounded{
-		border-radius:3px;
+		border-radius:100px;
 	}
 
 	&.btn_left{
@@ -77,326 +52,530 @@ $color-light-active:$color-light-1;
 		font-size:18px;
 	}
 
-
 	&.btn_icon{
 		display:flex;
 		align-items:center;
+
+		&::before{
+			vertical-align:middle;
+			font-family: "Font Awesome 5 Free";
+			font-style: normal;
+			font-variant-caps: normal;
+			font-variant-ligatures: normal;
+			font-weight: 900;
+			font-size:1.3em;
+			height: 16px;
+			line-height: 17px;
+			margin-right: 12px;
+			text-rendering: auto;
+			width: 16px;
+			-webkit-font-smoothing: antialiased;
+		}
 	}
 
-	&.btn_icon::before{
-		vertical-align:middle;
-		font-family: "Font Awesome 5 Free";
-		font-style: normal;
-		font-variant-caps: normal;
-		font-variant-ligatures: normal;
-		font-weight: 900;
-		font-size:1.3em;
-		height: 16px;
-		line-height: 17px;
-		margin-right: 12px;
-		text-rendering: auto;
-		width: 16px;
-		-webkit-font-smoothing: antialiased;
+	&_blue{
+		background-color: $color-blue-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-blue-600 radial-gradient(circle, transparent 1%, $color-blue-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-blue-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-blue-500;
+			border:1px solid $color-blue-500;
+
+			&:hover{
+				background: $color-blue-600 radial-gradient(circle, transparent 1%, $color-blue-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-blue-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
 	}
 
+	&_red{
+		background-color: $color-red-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-red-600 radial-gradient(circle, transparent 1%, $color-red-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-red-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-red-500;
+			border:1px solid $color-red-500;
+
+			&:hover{
+				background: $color-red-600 radial-gradient(circle, transparent 1%, $color-red-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-red-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
+
+	&_green{
+		background-color: $color-green-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-green-600 radial-gradient(circle, transparent 1%, $color-green-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-green-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-green-500;
+			border:1px solid $color-green-500;
+
+			&:hover{
+				background: $color-green-600 radial-gradient(circle, transparent 1%, $color-green-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-green-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
+
+	&_orange{
+		background-color: $color-orange-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-orange-600 radial-gradient(circle, transparent 1%, $color-orange-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-orange-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-orange-500;
+			border:1px solid $color-orange-500;
+
+			&:hover{
+				background: $color-orange-600 radial-gradient(circle, transparent 1%, $color-orange-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-orange-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
+
+	&_orange{
+		background-color: $color-orange-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-orange-600 radial-gradient(circle, transparent 1%, $color-orange-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-orange-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-orange-500;
+			border:1px solid $color-orange-500;
+
+			&:hover{
+				background: $color-orange-600 radial-gradient(circle, transparent 1%, $color-orange-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-orange-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
+
+	&_purple{
+		background-color: $color-purple-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-purple-600 radial-gradient(circle, transparent 1%, $color-purple-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-purple-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-purple-500;
+			border:1px solid $color-purple-500;
+
+			&:hover{
+				background: $color-purple-600 radial-gradient(circle, transparent 1%, $color-purple-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-purple-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
+
+	&_pink{
+		background-color: $color-pink-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-pink-600 radial-gradient(circle, transparent 1%, $color-pink-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-pink-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-pink-500;
+			border:1px solid $color-pink-500;
+
+			&:hover{
+				background: $color-pink-600 radial-gradient(circle, transparent 1%, $color-pink-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-pink-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+	}
+
+	&_brown{
+		background-color: $color-brown-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-brown-600 radial-gradient(circle, transparent 1%, $color-brown-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-brown-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-brown-500;
+			border:1px solid $color-brown-500;
+
+			&:hover{
+				background: $color-brown-600 radial-gradient(circle, transparent 1%, $color-brown-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-brown-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
+
+	&_lime{
+		background-color: $color-lime-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-lime-600 radial-gradient(circle, transparent 1%, $color-lime-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-lime-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-lime-500;
+			border:1px solid $color-lime-500;
+
+			&:hover{
+				background: $color-lime-600 radial-gradient(circle, transparent 1%, $color-lime-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-lime-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
+
+	&_yellow{
+		background-color: $color-yellow-500;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-yellow-600 radial-gradient(circle, transparent 1%, $color-yellow-600 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-yellow-400;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-yellow-500;
+			border:1px solid $color-yellow-500;
+
+			&:hover{
+				background: $color-yellow-600 radial-gradient(circle, transparent 1%, $color-yellow-600 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-yellow-400;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
+
+	&_dark{
+		background-color: $color-dark-300;
+		color:$color-light-100;
+
+		&:hover{
+			background: $color-dark-400 radial-gradient(circle, transparent 1%, $color-dark-400 1%) center/15000%;
+			color:$color-light-100;
+		}
+
+		&:active{
+			background-color: $color-dark-200;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-dark-100;
+			color: $color-light-300;
+			border:1px solid $color-light-300;
+
+			&:hover{
+				background: $color-dark-300 radial-gradient(circle, transparent 1%, $color-dark-300 1%) center/15000%;
+				color:$color-light-100;
+			}
+
+			&:active{
+				background-color: $color-light-200;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
+
+	&_light{
+		background-color: $color-light-200;
+		color:$color-dark-100;
+
+		&:hover{
+			background: $color-light-300 radial-gradient(circle, transparent 1%, $color-light-300 1%) center/15000%;
+			color:$color-dark-100;
+		}
+
+		&:active{
+			background-color: $color-light-200;
+			background-size:100%;
+			transition:background 0s;
+		}
+
+		&.btn_icon::before{
+			content:"\f05a";
+		}
+
+		&_outline{
+			background-color:$color-light-100;
+			color: $color-dark-300;
+			border:1px solid $color-dark-300;
+
+			&:hover{
+				background: $color-light-200 radial-gradient(circle, transparent 1%, $color-light-200 1%) center/15000%;
+				color:$color-dark-100;
+			}
+
+			&:active{
+				background-color: $color-light-300;
+				background-size:100%;
+				transition:background 0s;
+			}
+
+			&.btn_icon::before{
+				content:"\f05a";
+			}
+		}
+
+	}
 }
-
-
-.btn_info{
-	background-color: $color-info;
-	color:#fff;
-
-	&:hover{
-		background: $color-info-hover radial-gradient(circle, transparent 1%, $color-info-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color: $color-info-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-
-	&.btn_icon::before{
-		content:"\f05a";
-	}
-
-}
-
-
-.btn_outline_info{
-	background-color:#fff;
-	color: $color-info;
-	border:1px solid $color-info;
-
-	&:hover{
-		background: $color-info-hover radial-gradient(circle, transparent 1%, $color-info-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color: $color-info-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-
-	&.btn_icon::before{
-		content:"\f05a";
-	}
-}
-
-
-.btn_grey{
-	background-color: $color-grey;
-	color:#fff;
-
-	&:hover{
-		background: $color-grey-hover radial-gradient(circle, transparent 1%, $color-grey-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-grey-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-}
-
-
-.btn_outline_grey{
-	background-color:#fff;
-	color: $color-grey;
-	border:1px solid $color-grey;
-
-	&:hover{
-		background: $color-grey-hover radial-gradient(circle, transparent 1%, $color-grey-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-grey-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-}
-
-
-.btn_error{
-	background-color:$color-error;
-	color:#fff;
-
-
-	&:hover{
-		background: $color-error-hover radial-gradient(circle, transparent 1%, $color-error-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-error-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-
-	&.btn_icon::before{
-		content:"\f00d";
-	}
-}
-
-
-.btn_outline_error{
-	background-color:#fff;
-	color:$color-error;
-	border:1px solid $color-error;
-
-
-	&:hover{
-		background: $color-error-hover radial-gradient(circle, transparent 1%, $color-error-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-error-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-
-	&.btn_icon::before{
-		content:"\f00d";
-	}
-}
-
-
-.btn_success{
-	background-color: $color-success;
-	color:#fff;
-
-
-	&:hover{
-		background: $color-success-hover radial-gradient(circle, transparent 1%, $color-success-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-success-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-
-	&.btn_icon::before{
-		content:"\f058";
-	}
-}
-
-
-.btn_outline_success{
-	background-color:#fff;
-	color:$color-success;
-	border:1px solid $color-success;
-
-
-	&:hover{
-		background: $color-success-hover radial-gradient(circle, transparent 1%, $color-success-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-success-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-
-	&.btn_icon::before{
-		content:"\f058";
-	}
-}
-
-
-.btn_warn{
-	background-color:$color-warn;
-	color:#fff;
-
-	&:hover{
-		background: $color-warn-hover radial-gradient(circle, transparent 1%, $color-warn-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-warn-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-
-	&.btn_icon::before{
-		content:"\f00d";
-	}
-}
-
-
-.btn_outline_warn{
-	background-color:#fff;
-	color:$color-warn;
-	border:1px solid $color-warn;
-
-
-	&:hover{
-		background: $color-warn-hover radial-gradient(circle, transparent 1%, $color-warn-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-warn-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-
-	&.btn_icon::before{
-		content:"\f00d";
-	}
-}
-
-
-.btn_dark{
-	background-color:$color-dark;
-	color:#fff;
-
-
-	&:hover{
-		background: $color-dark-hover radial-gradient(circle, transparent 1%, $color-dark-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-dark-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-}
-
-
-.btn_outline_dark{
-	background-color:#fff;
-	color:$color-dark;
-	border:1px solid $color-dark;
-
-
-	&:hover{
-		background: $color-dark-hover radial-gradient(circle, transparent 1%, $color-dark-hover 1%) center/15000%;
-		color:#fff;
-	}
-
-	&:active{
-		background-color:$color-dark-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-}
-
-
-.btn_light{
-	background-color:$color-light;
-	color: $color-dark;
-
-
-	&:hover{
-		background: $color-light-hover radial-gradient(circle, transparent 1%, $color-light-hover 1%) center/15000%;
-		color: $color-dark;
-	}
-
-	&:active{
-		background-color:$color-light-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-}
-
-
-.btn_outline_light{
-	background-color:#fff;
-	color: $color-dark;
-	border:1px solid $color-light;
-
-
-	&:hover{
-		background: $color-light-hover radial-gradient(circle, transparent 1%, $color-light-hover 1%) center/15000%;
-		color: $color-dark;
-	}
-
-	&:active{
-		background-color:$color-light-active;
-		background-size:100%;
-		transition:background 0s;
-	}
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -411,6 +590,7 @@ $color-light-active:$color-light-1;
 	vertical-align:middle;
 	margin:4px 2px;
 	flex-flow:row wrap;
+	width:fit-content;
 
 	&.btn_group_small > .btn{
 		padding:8px;
@@ -448,18 +628,20 @@ $color-light-active:$color-light-1;
 
 	&.btn_group_left{
 		justify-content:flex-start;
+		width:100%;
 	}
 
 	&.btn_group_center{
 		justify-content:center;
+		width:100%;
 	}
 
 	&.btn_group_right{
 		justify-content:flex-end;
+		width:100%;
 	}
 
 	&.btn_group_column{
-
 		flex-direction:column;
 
 		&.btn_group_rounded > .btn{
@@ -478,12 +660,14 @@ $color-light-active:$color-light-1;
 
 		>.btn{
 			width:fit-content;
-			margin-top:-1px;
-			margin-left:-1px;
 		}
 
-		&.btn_group_block > .btn{
-			width:100% !important;
+		&.btn_group_block{
+			width:100%;
+
+			&> .btn{
+				width:100% !important;
+			}
 		}
 	}
 }

@@ -14,4 +14,6 @@ class Navbar{
 
 }
 
+const nav = new Navbar();
+
 export default Navbar;

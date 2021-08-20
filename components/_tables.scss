@@ -5,7 +5,7 @@
 	width:100%;
 	border-collapse:collapse;
 	margin-bottom:1rem;
-	border-color:$color-dark-5;
+	border-color:$color-dark-400;
 
 	thead,
 	tbody,
@@ -32,7 +32,7 @@
 	}
 
 	tr{
-		background-color:$color-blue-1;
+		background-color:$color-light-100;
 	}
 
 	td,
@@ -40,50 +40,107 @@
 		padding:0.6rem;
 	}
 
-
-	&_light tr,
-	& tr.table_light{
-		background-color:$color-light-1;
+	&_red tr,
+	& tr.table_red{
+		background-color:$color-red-200;
 	}
-
-	&_grey tr,
-	& tr.table_grey{
-		background-color:$color-grey-1;
+	&_blue tr,
+	& tr.table_blue{
+		background-color:$color-blue-200;
 	}
-
-	&_warn tr,
-	& tr.table_warn{
-		background-color:$color-orange-1;
+	&_green tr,
+	& tr.table_green{
+		background-color:$color-green-200;
 	}
-
-	&_error tr,
-	& tr.table_error{
-		background-color:$color-red-1;
+	&_lime tr,
+	& tr.table_lime{
+		background-color:$color-lime-200;
 	}
-
-	&_success tr,
-	& tr.table_success{
-		background-color:$color-green-1;
+	&_yellow tr,
+	& tr.table_yellow{
+		background-color:$color-yellow-200;
+	}
+	&_orange tr,
+	& tr.table_orange{
+		background-color:$color-orange-200;
+	}
+	&_purple tr,
+	& tr.table_purple{
+		background-color:$color-purple-200;
+	}
+	&_pink tr,
+	& tr.table_pink{
+		background-color:$color-pink-200;
+	}
+	&_brown tr,
+	& tr.table_brown{
+		background-color:$color-brown-200;
 	}
 	&_dark tr,
 	& tr.table_dark{
-		background-color:$color-dark-5;
-		color:$color-light-1;
+		background-color:$color-dark-300;
+		color:$color-light-100;
+
+	}
+	&_light tr,
+	& tr.table_light{
+		background-color:$color-light-200;
 	}
 
 	&_dark{
-		border-color:$color-light-1;
+		border-color:$color-light-100;
 	}
 
 	&_striped{
-		> tbody > tr:nth-of-type(odd){
-			filter:brightness(104%);
+		tbody tr:nth-of-type(odd){
+			filter:brightness(110%);
+		}
+
+		&.table_dark{
+			tbody tr:nth-of-type(odd){
+				filter:brightness(120%);
+			}
 		}
 	}
 
-	&_hover > tbody > tr:hover{
+	&_hover{
+		&.table_red tbody tr:hover{
+			background-color:$color-red-300;
+		}
+		&.table_blue tbody tr:hover{
+			background-color:$color-blue-300;
+		}
+		&.table_green tbody tr:hover{
+			background-color:$color-green-300;
+		}
+		&.table_lime tbody tr:hover{
+			background-color:$color-lime-300;
+		}
+		&.table_yellow tbody tr:hover{
+			background-color:$color-yellow-300;
+		}
+		&.table_orange tbody tr:hover{
+			background-color:$color-orange-300;
+		}
+		&.table_purple tbody tr:hover{
+			background-color:$color-purple-300;
+		}
+		&.table_pink tbody tr:hover{
+			background-color:$color-pink-300;
+		}
+		&.table_brown tbody tr:hover{
+			background-color:$color-brown-300;
+		}
+		&.table_dark tbody tr:hover{
+			background-color:$color-dark-200;
+		}
+		&.table_light tbody tr:hover{
+			background-color:$color-light-300;
+		}
+	}
 
-		filter:brightness(90%);
+	&_max_content{
+		max-width:fit-content;
 	}
 
 	&_small{
@@ -97,6 +154,44 @@
 		td,
 		th{
 			padding:1rem;
+		}
+	}
+
+	&_left{
+		margin-right:auto;
+	}
+
+	&_center{
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	&_right{
+		margin-left:auto;
+
+	}
+
+	&_align{
+		&_left{
+			> thead,
+			tbody,
+			tfoot,
+			tr,
+			th,
+			td{
+				text-align:left;
+			}
+		}
+
+		&_right{
+			> thead,
+			tbody,
+			tfoot,
+			tr,
+			th,
+			td{
+				text-align:right;
+			}
 		}
 	}
 
@@ -121,7 +216,7 @@
 		th,
 		td{
 			text-align:center;
-			border-color:$color-grey-4;
+			border-color:$color-grey-400;
 			border-style:solid;
 			border-width:1px;
 		}
