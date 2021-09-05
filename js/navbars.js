@@ -1,9 +1,8 @@
 class Navbar{
 
-    constructor(){
-        this.navbar = document.querySelector('.navbar');
-        this.navbar_icon = this.navbar.querySelector('.navbar_icon');
-        this.navbar_icon.addEventListener("click", this.toggleNavbar);
+    constructor(navbar){
+        this.element = navbar;
+        this.element.querySelector('.navbar_icon').addEventListener("click", this.toggleNavbar);
 
     }
 
@@ -13,7 +12,5 @@ class Navbar{
     }
 
 }
-
-const nav = new Navbar();
 
 export default Navbar;

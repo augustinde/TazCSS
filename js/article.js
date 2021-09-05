@@ -1,15 +1,13 @@
-class Dot{
+class Article{
 
-    constructor(){
-        this.dot = document.querySelectorAll('.dot_container');
-        this.dot.forEach(item => {
-            item.addEventListener("click", this.openDot)
-        });
-        this.dot = document.querySelectorAll('.dot_close');
-        this.dot.forEach(item => {
-            item.addEventListener("click", this.closeDot)
-        });
+    constructor(article){
+        this.element = article;
+        console.log(this.element.outerHTML)
+        this.open_dot = this.element.querySelector('.dot_container').addEventListener("click", this.openDot);
+        this.close_dot = this.element.querySelector('.dot_close').addEventListener("click", this.closeDot);
+
     }
+
 
     openDot(){
         console.log(this.parentNode.querySelector(".dot_content"));
@@ -22,3 +20,5 @@ class Dot{
     }
 
 }
+
+export default Article;

@@ -5,6 +5,10 @@ form{
 
 .form{
 
+	&_feedback{
+		color:$color-red-500;
+	}
+
 	&_select{
 		background-color:#fff !important;
 		padding:0.4rem 0.8rem;

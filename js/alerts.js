@@ -1,16 +1,14 @@
 class Alert{
 
-    constructor(){
-        this.alert = document.querySelectorAll('.alert_btn_close');
-        this.alert.forEach(item => {
-            item.addEventListener("click", this.closeAlert)
-        });
+    constructor(alert){
+        this.element = alert;
+        this.element.addEventListener("click", this.closeAlert);
     }
 
     closeAlert(){
+        console.log(this)
         this.parentNode.remove();
     }
-
 
 }
 

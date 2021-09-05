@@ -9,15 +9,30 @@
 	& > .form_input {
 		border-color: $color-grey-200;
 
-		&_group_text {
-			display: flex;
-			align-items: center;
-			line-height: 1.5;
-			text-align: center;
-			border: 1px solid $color-grey-200;
-			padding: 0.4rem 0.7rem;
-			margin: 0.2rem 0rem 1rem 0rem;
-			background-color: $color-light-200;
+		&_group{
+			&_text {
+				display: flex;
+				align-items: center;
+				line-height: 1.5;
+				text-align: center;
+				border: 1px solid $color-grey-200;
+				padding: 0.4rem 0.7rem;
+				margin: 0.2rem 0rem 1rem 0rem;
+				background-color: $color-light-200;
+			}
+
+			&_icon{
+				display: flex;
+				align-items: center;
+				line-height: 1.5;
+				text-align: center;
+				border: 1px solid $color-grey-200;
+				padding: 0.4rem 0.7rem;
+				margin: 0.2rem 0rem 1rem 0rem;
+				background-color: $color-light-200;
+				cursor: pointer;
+			}
+
 		}
 	}
 
